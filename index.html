@@ -1,9 +1,120 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<script src= "https://use.fontawesome.com/d1341f9b7a.js"></script>
+		<link rel= "stylesheet" href="style.css">
+		<title> Personal Website </title>
+        <script>
+            function openCardsList() { 
+                document.getElementById("About me").style.display="block"; 
+                document.getElementById("Publications").style.display="none";
+                document.getElementById("Blogs").style.display="none"; 
+            }
+            function openPublication(){
+                document.getElementById("About me").style.display = "none";
+                document.getElementById("Publications").style.display="block";
+                document.getElementById("Blogs").style.display="none";  
+            }
 
-<body>
-  <h1>AMAKOR AUGUSTINA C.</h1>
-  <p>Welcome to my website!</p>
-  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
-</body>
+            function openBlog(){
+                document.getElementById("About me").style.display = "none";
+                document.getElementById("Publications").style.display="none"; 
+                document.getElementById("Blogs").style.display="block"; 
+            }
 
+        </script>
+	</head>
+	<body>
+    <div class="navbar">
+        <a onclick="openCardsList()" href="#About me">Bio</a>
+        <a href="https://i.ibb.co/mC7ChDW/Augustina-Amakor-Ph-D.jpg" >CV</a>
+        <a onclick= "openPublication()" href="#Publications">Publications</a>
+        <a  onclick= "openBlog()"href="#Blogs" class="right">Blogs</a>
+        </div>
+
+<div class="row">
+    <div class="box">
+    <img src="https://i.ibb.co/1mBgYBF/IMG-20210105-050631-5.jpg" alt="" width="190" height="220" class = "box-img">
+    <h1>AMAKOR AUGUSTINA C.</h1>
+    <h5>Data Engineer - Data Scientist - Researcher - AI - Machine Learning </h5>
+    <span style='font-size:100px;'>&#129303;</span>
+    <p>Welcome to my website!</p>
+    
+    <ul>
+        <li><a href="#"> <i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+        <li><a href="#"> <i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/augustina-amakor-a85419146/"> <i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+        <li><a href="https://scholar.google.com/citations?hl=en&user=5W9TbLoAAAAJ"><i class="fa fa-google-plus-square" aria-hidden="true"></i></a></li>
+        <li><a href="#"> <i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
+    </ul> 
+    </div>
+
+    <div class="main"> 
+        <div id='About me'style="display:none">
+        <h2>About me</h2>
+        <h3>Brief Description</h3>
+        <p>I bagged my Bachelors (BSc.) in Statistics in 2017 from the university of Nigeria Nsukka. In 2020, I was awarded the TotalEnergies (then Total) international masters
+            Masters Scholarship to France were I obtained my masters degree (MSc) in Industrial and Applied Mathematics from Grenoble INP- ENSIMAG France.
+            I am a current Postgraduate researcher (PhD) at the Universität Paderborn working on Multicriteria Machine Learning and AI</p>
+
+        <h3>Work Experience</h3>  
+     <p> <b>1. DATA ENGINEER INTERN</b> <br>
+        Amadeus SAS, France March 2022 - August 2022 <br>
+        - Analytics as an enabler for API experience improvement.<br>
+        - Implementation of Machine Learning models to the data collected.<br><br>
+
+        <b> 2. AUTOMATED HUMAN MACHINE INTERFACE TESTING INTERN</b><br>
+        TotalEnergies Pau, France   May 2021 - August 2021 <br>
+        - Using Selenium IDE software to develop tests that simulate a user workflow on the IQ-ALL application.<br>
+        - Translating the tests into Java programming language, and adapting them to be launched on Azure Devops environment.<br><br>
+
+    <b> 3. LOGISTICIAN <br> </b> 
+        Sustainable Development Goals Oyo state, Nigeria    Jul 2018 - Sep 2020 <br>
+        - Planned, organized, and ensured the effective execution of projects based on data collected and analyzed during previous projects (such as feeding the streets, project Motherless babies home, etc). <br>
+        - Sensitization of the public on the 17 goals of SDGs.<br><br>
+
+    <b> 4. DATA SCIENCE INTERN <br> </b> 
+        National Bureau of Statistics Minna, Niger State, Nigeria    Apr 2016- Sep 2016 <br>
+        - Collection of data- market survey, household survey, and farm survey. <br>
+        - Analyzed collected data using software like SPSS, Microsoft Excel, etc. <br>
+     </p>   
+        <h3>Hobbies</h3>
+        <p>Reading -  Singing - Voluntaring - Teaching - Travelling - Cycling </p>
+    </div> 
+
+    <div id='Publications' style="display:none" >
+        <h2>Publications</h2>       
+        <p>  1. Victoria, Oladugba Abimibola, Amakor Chidinma Augustina, Babatunde Oluwagbenga Tobi, 
+            and Nwogu-Ikojo Eluma Leonard. "ESTIMATION OF PROPORTIONS
+            OF VARIABILITY IN TWO-WAY NESTED RANDOM EFFECT MODEL." Journal of Applied Probability 14, no.2 (2019)
+            <a id='Publications' href="http://japs.isoss.net/14(2)2%2012032.pdf">http://japs.isoss.net/14(2)2%2012032.pdf</a>       
+        </p>
+
+    <p> 2. Kayode Oshinubi, Mustapha Rachdi, Augustina C. Amakor, Peter Olumuyiwa, Abayomi Ayoade, Jacques
+        Demongeot. “Approach to COVID-19 time series data
+        using deep learning and spectral analysis methods .”
+        Journal of Mathematical Biosciences and Engineering
+        (2021)  
+        <a id='Publications' href="https://www.aimspress.com/article/doi/10.3934/bioeng.2022001?viewType=HTML">https://www.aimspress.com/article/doi/10.3934/bioeng.2022001?viewType=HTML</a>
+         
+   </p>
+
+    </div> 
+
+
+    <div id='Blogs' style="display:none" >
+        <h2>News</h2>
+        <p><a href="https://www.flickr.com/photos/hlforum/sets/72177720302186581"> <img alt="9th HLF" src="https://i.ibb.co/MRNrLkv/hlf22hlff-52365940202-o.jpg" width="550" height="400"></a></a> 
+            <h4>The 9th HLF 2022 </h4></p>
+        <h5> Attended the 9th Heidelberg Laureate Forum (HLF) 2022. Blogs on this can be seen on https://dailyfocus.ng/heidelberg-laureate-forum-14-nigerian-students-among-best-young-researchers-speak-on-their-researches/</h5>
+    </div> 
+
+    </div>
+</div>
+
+
+    </body>
 </html>
+
+

@@ -1,0 +1,110 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url(https://i.ibb.co/f02w73j/4873152.jpg) no-repeat;
+    background-size: cover ;
+}
+
+
+.box{
+   /* width: 600px;*/
+   flex: 450;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 45px;
+    text-align: center;
+    /*margin: auto;*/
+    /*margin-top: 5%;*/
+    color: white;
+    font-family: 'Century Gothic', sans-serif;
+}
+
+.box-img{
+    border-radius: 50% ;
+    width: 190px;
+    height: 220px;
+}
+
+.box h1{
+    font-size: 36px;
+    letter-spacing: 3px;
+    font-weight: 100;
+}
+.box h5{
+    font-size: 20px;
+    letter-spacing: 3px;
+    font-weight: 100;
+
+}
+.box p{
+    text-align: justify;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+.box li{
+    display: inline-block;
+    margin: 6px;
+    list-style: none;
+}
+.box li a{
+    color:white;
+    text-decoration: none;
+    font-size: 60px;
+    transition: all ease-in-out 250ms;
+}
+.box li a:hover{
+    color: #d3cad5;
+}
+
+/* Style the top navigation bar */
+.navbar {
+    overflow: hidden;
+    background-color: #010908;
+  }
+  
+  /* Style the navigation bar links */
+  .navbar a {
+    float: left;
+    font-size: px;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+  }
+  
+  /* Right-aligned link */
+  .navbar a.right {
+    float: right;
+  }
+  
+  /* Change color on hover */
+  .navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Column container */
+  .row {  
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .row p {
+    text-align: center;
+  }
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+
+
+/* Main column */
+.main {
+    flex: 450;   
+    padding: 45px;
+    text-align: center;
+   /* visibility: hidden; */
+  }
+.main p{
+    text-align: justify;
+}
+
